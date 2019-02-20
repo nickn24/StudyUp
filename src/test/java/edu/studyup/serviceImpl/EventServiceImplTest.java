@@ -75,7 +75,7 @@ class EventServiceImplTest {
 			eventServiceImpl.updateEventName(eventID, "Renamed Event 3");
 		  });
 	}
-	
+
 	@Test
 	void testUpdateEvent_LongName_badCase() {
 		int eventID = 1;
@@ -182,5 +182,4 @@ class EventServiceImplTest {
 		int eventID = 3;
 		assertEquals(null, eventServiceImpl.deleteEvent(eventID));
 	}
-	
 }
